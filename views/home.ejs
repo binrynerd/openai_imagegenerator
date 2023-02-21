@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Generater</title>
+  </head>
+  <body>
+    <h1>Greetings from open Image Generater👋</h1>
+    <h1>Generate an Image</h1>
+    <form action="/openai/generateimage" method="POST">
+      <input type="text" name="prompt" id="prompt" placeholder="ENTER PROMOT" />
+      <select name="size" id="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <!-- <button type="submit">Generate</button> -->
+      <input type="submit" value="Generate">
+    </form>
+  </body>
+  <script src="js/main.js"></script>
+</html>
